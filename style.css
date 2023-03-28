@@ -1,0 +1,152 @@
+body {
+        background: linear-gradient(
+            -90deg,
+            #ffc312,
+            #ee5a24,
+            #ea2027,
+            #c4e538,
+            #a3cb38,
+            #009432,
+            #006266,
+            #1b1464,
+            #8b0000,
+            #ed4c67,
+            #ffc312,
+            #ee5a24,
+            #ea2027,
+            #c4e538,
+            #a3cb38,
+            #009432,
+            #006266,
+            #1b1464,
+            #8b0000,
+            #ed4c67,
+             #ffc312,
+            #ee5a24,
+            #ea2027,
+            #c4e538,
+            #a3cb38,
+            #009432,
+            #006266,
+            #1b1464,
+            #8b0000,
+            #ed4c67,
+            #ffc312,
+            #ee5a24,
+            #ea2027,
+            #c4e538,
+            #a3cb38,
+            #009432,
+            #006266,
+            #1b1464,
+            #8b0000,
+            #ed4c67,
+            #ffa07a
+          );
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      label {
+        font-size: 18px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      input[type="text"]:invalid,
+      input[type="password"]:invalid {
+        box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.5);
+      }
+
+      input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4169e1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1e90ff;
+      }
+
+      .esqueceu-senha {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .esqueceu-senha a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      /* Media queries */
+      @media only screen and (max-width: 768px) {
+        /* Estilo para telas menores que 768px */
+        .container {
+          height: auto;
+        }
+
+        form {
+          width: 80%;
+        }
+      }
+
+@media only screen and (max-width: 480px) {
+  /* Estilo para telas menores que 480px */
+  label {
+    font-size: 16px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    font-size: 14px;
+  }
+}
